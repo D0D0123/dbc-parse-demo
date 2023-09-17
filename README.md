@@ -6,19 +6,19 @@ The following is a demo of how to install and use the [dbcppp](https://github.co
 
 A DBC (Distributed Network Protocol Controller Area Network) file is used to define the message and signal definitions for communication on a CAN (Controller Area Network) bus. The general format goes as follows:
 
- - Version Information: This section specifies the version of the DBC file format being used. It often appears at the beginning of the file and helps ensure compatibility with different DBC file readers.
+ - **Version Information**: This section specifies the version of the DBC file format being used. It often appears at the beginning of the file and helps ensure compatibility with different DBC file readers.
 
- - Node Definitions (`BU_:`) This section defines the network nodes (ECUs) that are part of the CAN network. Each node is given a unique name and an associated network address (Node ID).
+ - **Node Definitions** (`BU_:`) This section defines the network nodes (ECUs) that are part of the CAN network. Each node is given a unique name and an associated network address (Node ID).
 
- - Message Definitions (`BO_:`) This section defines the messages or frames that can be transmitted over the CAN bus. Each message has a unique message identifier (CAN ID) and can contain one or more signals.
+ - **Message Definitions** (`BO_:`) This section defines the messages or frames that can be transmitted over the CAN bus. Each message has a unique message identifier (CAN ID) and can contain one or more signals.
 
- - Signal Definitions (`SG_:`) Signals represent the individual data elements within a message. This section defines each signal's name, bit position, length, scaling, and other attributes. Signals are used to encode and decode data within messages.
+ - **Signal Definitions** (`SG_:`) Signals represent the individual data elements within a message. This section defines each signal's name, bit position, length, scaling, and other attributes. Signals are used to encode and decode data within messages.
 
- - Value Tables (`VAL_TABLE_:`) Value tables are used to assign descriptive labels to specific signal values. For example, you might use a value table to map numeric values in a signal to meaningful text labels.
+ - **Value Tables** (`VAL_TABLE_:`) Value tables are used to assign descriptive labels to specific signal values. For example, you might use a value table to map numeric values in a signal to meaningful text labels.
 
- - Attribute Definitions: DBC files can include various attributes that provide additional information about nodes, messages, or signals. These attributes are often used to document and annotate the communication parameters.
+ - **Attribute Definitions**: DBC files can include various attributes that provide additional information about nodes, messages, or signals. These attributes are often used to document and annotate the communication parameters.
 
- - Comments (`CM_`): Comments are not mandatory but are often included to provide human-readable explanations, notes, or documentation for various parts of the DBC file.
+ - **Comments** (`CM_`): Comments are not mandatory but are often included to provide human-readable explanations, notes, or documentation for various parts of the DBC file.
 
 
 See the `example.dbc` file for a very basic example.

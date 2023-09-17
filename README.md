@@ -46,7 +46,7 @@ You should now see an executable called `dbc_parse_demo` in the `build/` folder.
 
 ## Using the dbcppp CLI
 
-The dbcppp library comes with a CLI to print the contents of dbc files in a human readable format. Using the CLI on the very basic `example.dbc` file in this repo returns the following:
+The dbcppp library comes with a CLI to print the contents of dbc files in a human readable format. Using the CLI on the `example.dbc` file in this repo returns the following:
 
 ```
 dbcppp dbc2 --dbc=example.dbc --format=human

@@ -1,0 +1,11 @@
+VERSION "DBC Example 1.0"
+
+BS_:
+
+BU_: Front_CANNode ECU
+
+BO_ 500 MyMessage: 8 Front_CANNode
+ SG_ BatteryTemp : 0|8@1+ (1,0) [0|100] "degrees" ECU
+ SG_ TyrePressure : 8|16@1+ (1,0) [0|100] "psi" ECU
+
+CM_ BO_ 500 "Example of a CAN message with CAN ID 500, coming from the Front_CANNode";

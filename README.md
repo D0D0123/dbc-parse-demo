@@ -4,7 +4,7 @@ The following is a demo of how to install and use the [dbcppp](https://github.co
 
 ## DBC File Format
 
-A DBC (Distributed Network Protocol Controller Area Network) file is used to define the message and signal definitions for communication on a CAN (Controller Area Network) bus. The general format goes as follows:
+A DBC (Datebase CAN) file is used to define the message and signal definitions for communication on a CAN (Controller Area Network) bus. The general format goes as follows:
 
  - **Version Information**: This section specifies the version of the DBC file format being used. It often appears at the beginning of the file and helps ensure compatibility with different DBC file readers.
 

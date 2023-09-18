@@ -32,7 +32,7 @@ Consult the following resources for more information:
 These steps are assuming you are running a Linux system.
 
 1. Run `git clone --recurse-modules [repo-link-here]` to clone this repo
-2. Enter the `dbcppp` submodule, and run the install steps. Ensure that your `/usr/local/lib` directory now contains a file called `libdbcppp.so`.
+2. Enter the `dbcppp` submodule, and run the install steps inside it's README. Ensure that your `/usr/local/lib` directory now contains a file called `libdbcppp.so`.
 3. From the root of this repo, run the following:
 
 ```
@@ -97,10 +97,9 @@ With the 'Bit' section showing which bits of the data are occupied by which sens
 
 ## Running the Demo
 
-`dbc_parse_demo.cpp` and the root `CMakeLists.txt` demonstrate how to add this library to your project, and how to parse a dbc file in your code. The library does most of the heavy lifting, storing the parsed information into iterable objects whose attributes can be accessed.
+`dbc_parse_demo.cpp` and the root `CMakeLists.txt` demonstrate how to add this library to your project, and how to parse a dbc file in your code. The library does most of the heavy lifting using the `dbcppp::INetwork::LoadDBCFromIs(idbc)` function, storing the parsed information into iterable objects whose attributes can be accessed.
 
 Run the demo with `./dbc_parse_demo`, and check out the code to see how it works.
-
 
 ## Resources
 

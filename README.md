@@ -31,7 +31,7 @@ Consult the following resources for more information:
 
 These steps are assuming you are running a Linux system.
 
-1. Run `git clone --recurse-modules [repo-link-here]` to clone this repo
+1. Run `git clone --recurse-modules https://github.com/D0D0123/dbc-parse-demo` to clone this repo
 2. Enter the `dbcppp` submodule, and run the install steps inside it's README. Ensure that your `/usr/local/lib` directory now contains a file called `libdbcppp.so`.
 3. From the root of this repo, run the following:
 
